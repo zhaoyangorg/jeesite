@@ -1,6 +1,22 @@
-## 关注 JeeSite 4.0 请移步: <https://gitee.com/thinkgem/jeesite4>
 
-# JeeSite 企业信息化快速开发平台
+<p align="center">
+ <img alt="JeeSite" src="https://jeesite.com/assets/images/logo.png" width="120" height="120" style="margin-bottom: 10px;">
+</p>
+<h3 align="center" style="margin:30px 0 30px;font-weight:bold;font-size:30px;">JeeSite 快速开发平台</h3>
+<p align="center">
+ <a href="https://jeesite.com/docs/upgrade/" target="__blank"><img alt="JeeSite-V1.2" src="https://img.shields.io/badge/JeeSite-V1.2-success.svg"></a> &nbsp;
+<a href="https://gitee.com/thinkgem/jeesite/stargazers" target="__blank"><img alt="star" src="https://gitee.com/thinkgem/jeesite/badge/star.svg?theme=gvp"></a> &nbsp;
+ <a href="https://gitee.com/thinkgem/jeesite/members" target="__blank"><img alt="fork" src="https://gitee.com/thinkgem/jeesite/badge/fork.svg?theme=gvp"></a>
+</p>
+
+<br/>
+
+### 关注 JeeSite V4.0 请点击: <https://gitee.com/thinkgem/jeesite4>
+### 关注 JeeSite 微服务 请点击: <https://gitee.com/thinkgem/jeesite4-cloud>
+### 关注 JeeSite 移动端 请点击: <https://gitee.com/thinkgem/jeesite4-uniapp>
+### 关注 JeeSite Vue 请点击: <https://gitee.com/thinkgem/jeesite-vue>
+
+<br/>
 
 ## 平台简介
 
@@ -29,15 +45,15 @@ JeeSite 提供了常用工具进行封装，包括日志工具、缓存工具、
 
 ## 内置功能
 
-1.	用户管理：用户是系统操作者，该功能主要完成系统用户配置。
-2.	机构管理：配置系统组织机构（公司、部门、小组），树结构展现，可随意调整上下级。
-3.	区域管理：系统城市区域模型，如：国家、省市、地市、区县的维护。
-4.	菜单管理：配置系统菜单，操作权限，按钮权限标识等。
-5.	角色管理：角色菜单权限分配、设置角色按机构进行数据范围权限划分。
-6.	字典管理：对系统中经常使用的一些较为固定的数据进行维护，如：是否、男女、类别、级别等。
-7.	操作日志：系统正常操作日志记录和查询；系统异常信息日志记录和查询。
-8.	连接池监视：监视当期系统数据库连接池状态，可进行分析SQL找出系统性能瓶颈。
-9.	工作流引擎：实现业务工单流转、在线流程设计器。
+1. 用户管理：用户是系统操作者，该功能主要完成系统用户配置。
+2. 机构管理：配置系统组织机构（公司、部门、小组），树结构展现，可随意调整上下级。
+3. 区域管理：系统城市区域模型，如：国家、省市、地市、区县的维护。
+4. 菜单管理：配置系统菜单，操作权限，按钮权限标识等。
+5. 角色管理：角色菜单权限分配、设置角色按机构进行数据范围权限划分。
+6. 字典管理：对系统中经常使用的一些较为固定的数据进行维护，如：是否、男女、类别、级别等。
+7. 操作日志：系统正常操作日志记录和查询；系统异常信息日志记录和查询。
+8. 连接池监视：监视当期系统数据库连接池状态，可进行分析SQL找出系统性能瓶颈。
+9. 工作流引擎：实现业务工单流转、在线流程设计器。
 
 ## 为何选择JeeSite
 
@@ -55,9 +71,9 @@ JeeSite 提供了常用工具进行封装，包括日志工具、缓存工具、
 
 1、后端
 
-* 核心框架：Spring Framework 4.1
-* 安全框架：Apache Shiro 1.2
-* 视图框架：Spring MVC 4.1
+* 核心框架：Spring Framework 5.3
+* 安全框架：Apache Shiro 1.9
+* 视图框架：Spring MVC 5.3
 * 服务端验证：Hibernate Validator 5.2
 * 布局框架：SiteMesh 2.4
 * 工作流引擎：Activiti 5.21
@@ -65,8 +81,8 @@ JeeSite 提供了常用工具进行封装，包括日志工具、缓存工具、
 * 持久层框架：MyBatis 3.2
 * 数据库连接池：Alibaba Druid 1.0
 * 缓存框架：Ehcache 2.6、Redis
-* 日志管理：SLF4J 1.7、Log4j
-* 工具类：Apache Commons、Jackson 2.2、Xstream 1.4、Dozer 5.3、POI 3.9
+* 日志管理：SLF4J 1.7、Logback
+* 工具类：Apache Commons、Jackson、POI 3.9
 
 2、前端
 
@@ -85,8 +101,7 @@ JeeSite 提供了常用工具进行封装，包括日志工具、缓存工具、
 
 4、平台
 
-* 服务器中间件：在Java EE 5规范（Servlet 2.5、JSP 2.1）下开发，支持应用服务器中间件
-有Tomcat 6+、Jboss 7+、WebLogic 10+、WebSphere 8+。
+* 服务器中间件：在Java EE 7规范（Servlet 3.1、JSP 2.1）下开发。
 * 数据库支持：目前仅提供MySql和Oracle数据库的支持，但不限于数据库，平台留有其它数据库支持接口，
 你可以很方便的更改为其它数据库，如：SqlServer 2008、MySql 5.5、H2等
 * 开发环境：Java、Eclipse Java EE 4.3、Maven 3.1、Git
@@ -102,12 +117,13 @@ JeeSite 提供了常用工具进行封装，包括日志工具、缓存工具、
 
 ## 快速体验
 
-1. 具备运行环境：JDK1.6+、Maven3.0+、MySql5+或Oracle10g+。
+1. 具备运行环境：JDK1.8、Maven3.0+、MySql5+或Oracle10g+、Tomcat8.5。
 2. 修改src\main\resources\jeesite.properties文件中的数据库设置参数。
 3. 根据修改参数创建对应MySql或Oracle数据库用户和参数。
 4. 运行bin\init-db.bat脚本，即可导入表结构及演示数据(linux操作系统：在控制台中切换至项目根目录，运行命令：mvn antrun:run -Pinit-db)
-5. 运行bin\run-tomcat7.bat或bin\run-jetty.bat，启动Web服务器（第一次运行，需要下载依赖jar包，请耐心等待）。
-6. 最高管理员账号，用户名：thinkgem 密码：admin
+5. 运行bin\package.bat进行打包系统，完成后会在target目录生成jeesite.war文件
+6. 将jeesite.war文件，拷贝到您的Tomcat8 webapps目录下进行部署，启动Tomcat8。
+7. 启动Tomcat后浏览器访问系统，最高管理员账号，用户名：thinkgem 密码：admin
 
 ## 常见问题
 
@@ -117,7 +133,7 @@ JeeSite 提供了常用工具进行封装，包括日志工具、缓存工具、
 
 ## 更多文档
 
-* <https://github.com/thinkgem/jeesite/tree/master/doc>
+* <https://gitee.com/thinkgem/jeesite/tree/master/doc>
 
 ## 如何交流、反馈、参与贡献？
 
@@ -143,7 +159,7 @@ JeeSite 提供了常用工具进行封装，包括日志工具、缓存工具、
 6. 你可以二次包装出售，**但还请保留文件中的版权和作者信息**，并在你的产品说明中注明JeeSite。
 7. 你可以以任何方式获得，你可以修改包名或类名，**但还请保留文件中的版权和作者信息**。
 
-##为何使用MyBatis
+## 为何使用MyBatis
 
 * 学习成本：Hibernate的真正掌握要比Mybatis来得难不少。Mybatis框架相对简单很容易上手，也更加灵活。
 对于学习过Hibernate的用户，学习起MyBatis也更容易上手。
@@ -160,4 +176,4 @@ Hibernate性能上定不是问题。但对于大多数情况下，真正掌握Hi
 
 上述纯属个人观点，欢迎指正（thinkgem@163.com）。
 
-如果你仍然喜欢Hibernate，请点击[下载JeeSite Hibernate版本](https://github.com/thinkgem/jeesite/tree/master_hibernate)。
+如果你仍然喜欢Hibernate，请点击[下载JeeSite Hibernate版本](https://gitee.com/thinkgem/jeesite/tree/master_hibernate)。
