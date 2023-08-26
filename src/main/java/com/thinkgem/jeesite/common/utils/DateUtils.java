@@ -4,6 +4,7 @@
 package com.thinkgem.jeesite.common.utils;
 
 import java.text.ParseException;
+import java.util.Calendar;
 import java.util.Date;
 
 import org.apache.commons.lang3.time.DateFormatUtils;
@@ -169,7 +170,32 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		long afterTime = after.getTime();
 		return (afterTime - beforeTime) / (1000 * 60 * 60 * 24);
 	}
-	
+	/**
+	 * 获取过去第几天的日期
+	 *
+	 * @param past
+	 * @return
+	 */
+	public static String getPastDate(int past) {
+		Calendar calendar = Calendar.getInstance();
+		calendar.set(Calendar.DAY_OF_YEAR, calendar.get(Calendar.DAY_OF_YEAR) - past);
+		Date today = calendar.getTime();
+		String result = formatDate(today, "yyyyMMdd") ;
+		return result;
+	}
+
+	/**
+	 * 获取未来 第 past 天的日期
+	 * @param past
+	 * @return
+	 */
+	public static String getFetureDate(int past) {
+		Calendar calendar = Calendar.getInstance();
+		calendar.set(Calendar.DAY_OF_YEAR, calendar.get(Calendar.DAY_OF_YEAR) + past);
+		Date today = calendar.getTime();
+		String result = formatDate(today, "yyyyMMdd") ;
+		return result;
+	}
 	/**
 	 * @param args
 	 * @throws ParseException
